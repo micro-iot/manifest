@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote fetch="git://github.com/micro-iot" name="micro-iot"/>
+  <remote fetch="https://github.com/micro-iot" name="micro-iot"/>
   <remote fetch="git://git.yoctoproject.org/" name="poky"/>
   
   <default remote="micro-iot"/>
