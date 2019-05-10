@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote fetch="git://github.com/micro-iot" name="micro-iot"/>
+  <remote fetch="git://git.yoctoproject.org/" name="poky"/>
+  
+  <default remote="micro-iot"/>
+  
+  <project name="poky" path="poky" revision="rocko" remote="poky" /> 
+  <project name="meta-micro-iot/" path="poky/meta-micro-iot" revision="distro_cfg_from_pokytiny"/>
+  <project name="meta-linkit7688/" path="poky/meta-linkit7688" revision="kernel_4_4_92"/>
+  <project name="conf_linkit7688/" path="poky/build/conf" revision="master">
+      <copyfile src="build.sh" dest="poky/build.sh"/>
+  </project>/>
+
+</manifest>
